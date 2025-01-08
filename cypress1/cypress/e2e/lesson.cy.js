@@ -1,6 +1,6 @@
 describe('Проверка авторизации', function () {
 
-   it('Верный пароль и верный логин', function () {
+   it('Верный логин и верный пароль', function () {
         cy.visit('https://login.qa.studio');
         cy.get('#forgotEmailButton').should('have.css', 'color', 'rgb(0, 85, 152)');
         cy.get('#mail').type('german@dolnikov.ru');
